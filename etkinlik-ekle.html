@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etkinlik Ekle | Kampüs Etkinlikleri</title>
+    <link rel="stylesheet" href="css/numaran.css" />
+  </head>
+  <body>
+    <header>
+      <p class="site-adi">Kampüs Etkinlikleri</p>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <a href="etkinlik-ekle.html" aria-current="page">Ekle</a>
+        <a href="etkinlik-guncelle.html">Güncelle</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Yeni Etkinlik Ekle</h1>
+      <form>
+        <div class="alan">
+          <label for="ad">Etkinlik adı</label>
+          <input type="text" id="ad" name="ad" value="" required />
+          <p class="hata">Etkinlik adını yazın.</p>
+        </div>
+        <div class="alan">
+          <label for="kategori">Kategori</label>
+          <select name="kategori" id="kategori" required>
+            <option value="">Seçiniz</option>
+            <option value="seminer">Seminer</option>
+            <option value="atölye">Atölye</option>
+            <option value="konferans">Konferans</option>
+          </select>
+          <p class="hata">Bir kategori seçin.</p>
+        </div>
+        <div class="alan">
+          <label for="tarih">Tarih</label>
+          <input type="date" id="tarih" name="tarih" value="" required />
+          <p class="hata">Tarih seçin.</p>
+        </div>
+        <div class="alan">
+          <label for="saat">Saat</label>
+          <input type="time" id="saat" name="saat" value="" required />
+          <p class="hata">Saat seçin.</p>
+        </div>
+        <div class="alan">
+          <label for="yer">Yer</label>
+          <input type="text" id="yer" name="yer" value="" required />
+          <p class="hata">Etkinliğin yerini yazın.</p>
+        </div>
+        <div class="alan">
+          <label for="aciklama">Açıklama</label>
+          <textarea id="aciklama" name="aciklama"></textarea>
+        </div>
+        <button type="submit">Etkinliği ekle</button>
+      </form>
+      <p><a href="index.html">← Ana sayfaya dön</a></p>
+    </main>
+  </body>
+</html>
